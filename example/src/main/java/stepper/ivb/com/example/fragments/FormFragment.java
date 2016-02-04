@@ -6,13 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ivb.com.materialstepper.stepperFragment;
+import ivb.com.materialstepper.StepperFragment;
 import stepper.ivb.com.example.R;
 
 /**
  * Created by S.Shivasurya on 1/19/2016 - androidStudio.
  */
-public class FormFragment extends stepperFragment {
+public class FormFragment extends StepperFragment {
 
     public FormFragment(){
 

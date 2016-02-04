@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".simpleMobileStepper">
+    tools:context=".SimpleMobileStepper">
 
     <LinearLayout
         android:id="@+id/stepperlayout"
@@ -30,7 +30,7 @@
         android:background="#E7E7E7"
         android:layout_below="@+id/stepperlayout">
 
-        <ivb.com.materialstepper.components.stepperView
+        <ivb.com.materialstepper.components.StepperView
              android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/viewpager"/>

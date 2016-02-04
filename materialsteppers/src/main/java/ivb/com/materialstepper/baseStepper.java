@@ -5,9 +5,9 @@ import android.support.v4.view.ViewPager;
 
 import java.util.List;
 
-import ivb.com.materialstepper.Adapter.FragmentStateCurrentPageAdapter;
+import ivb.com.materialstepper.adapter.FragmentStateCurrentPageAdapter;
 
-public class baseStepper {
+public class BaseStepper {
 
 
     private ViewPager mViewPager;
@@ -15,7 +15,7 @@ public class baseStepper {
     public int CURRENT_PAGE = 0;
     public int TOTAL_PAGE = 0;
 
-    public baseStepper(ViewPager viewPager, List<Class> mStepperFragment, FragmentManager fm) {
+    public BaseStepper(ViewPager viewPager, List<Class> mStepperFragment, FragmentManager fm) {
 
         mViewPager = viewPager;
 
@@ -29,7 +29,7 @@ public class baseStepper {
     protected void onNextButtonClicked(){
         CURRENT_PAGE = mViewPager.getCurrentItem();
         if(resolveNavigation()) {
-            stepperFragment current = (stepperFragment) fragmentAdapter.getItem(CURRENT_PAGE);
+            StepperFragment current = (StepperFragment) fragmentAdapter.getItem(CURRENT_PAGE);
             if (current != null && current.onNextButtonHandler()) {
                 CURRENT_PAGE = CURRENT_PAGE + 1;
                 mViewPager.setCurrentItem(CURRENT_PAGE);

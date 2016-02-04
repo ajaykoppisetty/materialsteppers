@@ -1,4 +1,4 @@
-package ivb.com.materialstepper.Adapter;
+package ivb.com.materialstepper.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

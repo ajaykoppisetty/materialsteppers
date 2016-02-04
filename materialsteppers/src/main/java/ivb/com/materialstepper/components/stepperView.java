@@ -9,12 +9,12 @@ import android.view.View;
 /**
  * Created by S.Shivasurya on 1/19/2016 - androidStudio.
  */
-public class stepperView extends ViewPager {
-    public stepperView(Context context) {
+public class StepperView extends ViewPager {
+    public StepperView(Context context) {
         super(context);
     }
 
-    public stepperView(Context context, AttributeSet attrs) {
+    public StepperView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

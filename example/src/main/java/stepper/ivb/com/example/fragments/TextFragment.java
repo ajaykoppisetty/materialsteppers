@@ -6,13 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ivb.com.materialstepper.stepperFragment;
+import ivb.com.materialstepper.StepperFragment;
 import stepper.ivb.com.example.R;
 
 /**
  * Created by S.Shivasurya on 1/19/2016 - androidStudio.
  */
-public class TextFragment extends stepperFragment {
+public class TextFragment extends StepperFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

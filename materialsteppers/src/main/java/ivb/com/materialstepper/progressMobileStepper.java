@@ -12,12 +12,12 @@ import android.widget.ScrollView;
 import java.io.Serializable;
 import java.util.List;
 
-public abstract class progressMobileStepper extends AppCompatActivity implements View.OnClickListener{
+public abstract class ProgressMobileStepper extends AppCompatActivity implements View.OnClickListener{
 
     private Button mPrevious;
     private ProgressBar mStepperProgress;
     List<Class> mStepperFragmentList;
-    private baseStepper mBaseStepper;
+    private BaseStepper mBaseStepper;
     private int RECOVERCURRENTSTATE = 0;
     private ScrollView mScroll;
 
@@ -52,7 +52,7 @@ public abstract class progressMobileStepper extends AppCompatActivity implements
         {
             mStepperFragmentList = init();
         }
-        mBaseStepper = new baseStepper(mViewPager, mStepperFragmentList, getSupportFragmentManager());
+        mBaseStepper = new BaseStepper(mViewPager, mStepperFragmentList, getSupportFragmentManager());
         mBaseStepper.CURRENT_PAGE = RECOVERCURRENTSTATE;
         RECOVERCURRENTSTATE = 0;
         BackButtonConfig();

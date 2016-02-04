@@ -6,13 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ivb.com.materialstepper.stepperFragment;
+import ivb.com.materialstepper.StepperFragment;
 import stepper.ivb.com.example.R;
 
 /**
  * Created by S.Shivasurya on 1/20/2016 - androidStudio.
  */
-public class Instruction extends stepperFragment {
+public class Instruction extends StepperFragment {
     @Override
     public boolean onNextButtonHandler() {
         return true;

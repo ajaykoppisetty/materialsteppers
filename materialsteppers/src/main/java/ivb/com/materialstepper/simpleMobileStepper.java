@@ -15,12 +15,12 @@ import java.util.List;
 /**
  * Created by S.Shivasurya on 1/19/2016 - androidStudio - androidStudio.
  */
-public abstract class simpleMobileStepper extends AppCompatActivity implements View.OnClickListener {
+public abstract class SimpleMobileStepper extends AppCompatActivity implements View.OnClickListener {
 
     private Button mPrevious;
     private TextView mStepText;
     List<Class> mStepperFragmentList;
-    private baseStepper mBaseStepper;
+    private BaseStepper mBaseStepper;
     private int RECOVERCURRENTSTATE = 0;
     private ScrollView mScroll;
 
@@ -56,7 +56,7 @@ public abstract class simpleMobileStepper extends AppCompatActivity implements V
         {
             mStepperFragmentList = init();
         }
-        mBaseStepper = new baseStepper(mViewPager, mStepperFragmentList, getSupportFragmentManager());
+        mBaseStepper = new BaseStepper(mViewPager, mStepperFragmentList, getSupportFragmentManager());
         mBaseStepper.CURRENT_PAGE = RECOVERCURRENTSTATE;
         RECOVERCURRENTSTATE = 0;
         BackButtonConfig();
