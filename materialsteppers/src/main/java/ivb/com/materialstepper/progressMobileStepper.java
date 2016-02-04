@@ -68,6 +68,15 @@ public abstract class progressMobileStepper extends AppCompatActivity implements
 
     }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        if(savedInstanceState != null){
+            mStepperFragmentList = (List<Class>) savedInstanceState.getSerializable("HSTEPPERBASE");
+            RECOVERCURRENTSTATE = savedInstanceState.getInt("HCURRENT");
+        }
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
     protected void BackButtonConfig(){
         if(mBaseStepper.CURRENT_PAGE==0)
             mPrevious.setVisibility(View.INVISIBLE);
